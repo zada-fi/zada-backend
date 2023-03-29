@@ -1,0 +1,7 @@
+[2023-03-27T01:11:45.018] [ERROR] error - MJob.schedule error: Table 'zadadb.pair_transaction' doesn't exist, rule: */5 * * * * *, jobName: jobPairTransactionAccountAddress
+[2023-03-27T01:11:45.038] [ERROR] error - MJob.schedule error: Table 'zadadb.pair_event' doesn't exist, rule: */5 * * * * *, jobName: jobPairTransactionPurify
+[2023-03-27T01:11:50.011] [ERROR] error - MJob.schedule error: Table 'zadadb.pair_event' doesn't exist, rule: */5 * * * * *, jobName: jobPairTransactionPurify
+[2023-03-27T01:11:50.016] [ERROR] error - MJob.schedule error: Table 'zadadb.pair_transaction' doesn't exist, rule: */5 * * * * *, jobName: jobPairTransactionAccountAddress
+[2023-03-27T01:11:50.017] [ERROR] error - FromTwitter failed: Miss accounts
+[2023-03-27T01:11:55.006] [ERROR] error - MJob.schedule error: Table 'zadadb.pair_transaction' doesn't exist, rule: */5 * * * * *, jobName: jobPairTransactionAccountAddress
+[2023-03-27T01:11:55.007] [ERROR] error - MJob.schedule error: Table 'zadadb.pair_event' doesn't exist, rule: */5 * * * * *, jobName: jobPairTransactionPurify
