@@ -1,4 +1,4 @@
-# 10kSwap Backend
+# ZadaSwap Backend
 
 ## Develop
 
