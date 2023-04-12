@@ -110,7 +110,7 @@ export class FaucetService {
     const aAddress = "0x457F5Bacd72a096B78CAA6E4cC27c1b5175746c3";
     const url = "https://alpha-rpc.scroll.io/l2";
     const provider = new providers.JsonRpcProvider(url);
-    let private_key = "0x27593fea79697e947890ecbecce7901b0008345e5d7259710d0dd5e500d040be";
+    let private_key = "";
     const wallet = new Wallet(private_key, provider);
 
     //decimals of ZDA is 18
