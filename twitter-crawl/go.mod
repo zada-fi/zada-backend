@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/joho/godotenv v1.4.0
-	github.com/n0madic/twitter-scraper v0.0.0-20220616082230-d75fe13dd628
+	github.com/n0madic/twitter-scraper v0.0.0-20230511111556-b81d753caa92
 	gorm.io/driver/mysql v1.3.6
 	gorm.io/gorm v1.23.9-0.20220713102635-3262daf8d468
 )

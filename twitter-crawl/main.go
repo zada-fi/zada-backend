@@ -14,7 +14,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
-
+var scraper = twitterscraper.New()
 func connectDB() (db *gorm.DB) {
 	DB_HOST := os.Getenv("DB_HOST")
 	DB_NAME := os.Getenv("DB_NAME")
@@ -40,7 +40,16 @@ func connectDB() (db *gorm.DB) {
 }
 
 func scan(tweetQuery string) {
-	scraper := twitterscraper.New()
+	if !scraper.IsLoggedIn() {
+		TWITTER_NAME := os.Getenv("TWITTER_NAME")
+		TWITTER_PASSWORD := os.Getenv("TWITTER_PASSWORD")
+		TWITTER_EMAIL := os.Getenv("TWITTER_EMAIL")
+		err := scraper.Login(TWITTER_NAME,TWITTER_PASSWORD,TWITTER_EMAIL)
+		if err != nil {
+			log.Fatal(err)
+		return
+		}
+	}
 	scraper.SetSearchMode(twitterscraper.SearchLatest)
 
 	for tweet := range scraper.SearchTweets(context.Background(), tweetQuery, 100) {
